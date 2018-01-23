@@ -67,11 +67,13 @@
             margin-top:20px;
         }
         .left-sidebar {
-            width:130px;
+            float:left;
+            width:180px;
             height:100%;
-            background-color:red;
+            background-color: #cccccc;
         }
         .left-sidebar ul {
+            text-align: center;
             display: block;
         }
         .left-sidebar li {
@@ -80,9 +82,24 @@
             border-bottom:1px solid #FFF;
         }
         .left-sidebar ul li a {
-            color:white;
+            text-decoration: none;
+            color:#000;
             padding:10px;
             display: block;
+            font-weight: bold;
+            transition-duration: 0.5s;
+        }
+        .left-sidebar ul li a:hover {
+            color:#FFF;
+            opacity: 0.5;
+            background-color:rgb(122, 115, 112);
+        }
+        .gallery {
+            background: red;
+            float: left;
+            height: calc(100% - 30px);
+            padding:15px;
+            width: calc(100% - 210px);
         }
 
 
@@ -98,7 +115,7 @@
             <div class="avatar">
                 <img src="./img/avatar.png" rel="my avater">
             </div>
-            <h2>My Biographys</h2>
+            <h2>My Biography</h2>
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
@@ -115,7 +132,7 @@
                 </ul>
             </aside>
             <div class="gallery">
-
+                <h3>Gallery</h3>
             </div>
         </div>
     </div>
