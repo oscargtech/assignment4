@@ -35,8 +35,6 @@
             text-align: center;
         }
         .main-container {
-            
-            background-color:green;
             width:80%;
             height:100%;
             display: flex;
@@ -46,12 +44,12 @@
         }
         .bio-container {
             height: 140px;
-            background-color:#CCC;  
+            background-color:#99c39b;  
         }
         .avatar {
             width:180px;
             height:140px;
-            background:red;
+            background:#f7f7f7;
             float:left;
             margin-right: 15px;
             position: relative;
@@ -61,8 +59,7 @@
             height:100%;
         }
         .bottom-container {
-            background-color:blue;
-            height: 500px;
+            background-color:#f7f7f7;
             width:100%;
             margin-top:20px;
         }
@@ -70,7 +67,7 @@
             float:left;
             width:180px;
             height:100%;
-            background-color: #cccccc;
+            background-color: #f7f7f7;
         }
         .left-sidebar ul {
             text-align: center;
@@ -95,13 +92,35 @@
             background-color:rgb(122, 115, 112);
         }
         .gallery {
-            background: red;
+            background: #f7f7f7;
             float: left;
             height: calc(100% - 30px);
             padding:15px;
-            width: calc(100% - 210px);
+            width: calc(100% - 211px);
+            border-left: 1px solid rgb(146, 141, 141);
+            
         }
-
+        .gallery ul.row {
+            margin-top:25px;
+            margin-bottom:25px;
+            list-style-type:none;
+            text-align:center;
+            width:100%;
+        }
+        .gallery ul.row li {
+            margin-right:15px;
+            display: inline-block;
+           
+        }
+        .gallery ul.row li > img {
+            height:150px;
+            width:200px;
+        }
+        .box-shadow {
+            -webkit-box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+            -moz-box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+            box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+        }
 
     </style>
 </head>
@@ -111,7 +130,7 @@
         <span class="logo">LOGO</span>
     </header>
     <div class="main-container">
-        <div class="bio-container">
+        <div class="bio-container box-shadow">
             <div class="avatar">
                 <img src="./img/avatar.png" rel="my avater">
             </div>
@@ -120,7 +139,7 @@
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
         </div>
-        <div class="bottom-container">
+        <div class="bottom-container box-shadow">
             <aside class="left-sidebar">
                 <ul class="navigation">
                     <li><a href="#">Link</a></li>
@@ -133,6 +152,18 @@
             </aside>
             <div class="gallery">
                 <h3>Gallery</h3>
+                <ul class="row">
+                    <li class="box-shadow"><img src="./img/1.jpg" alt="car"></li>
+                    <li class="box-shadow"><img src="./img/2.jpg" alt="car"></li>
+                    <li class="box-shadow"><img src="./img/3.jpg" alt="car"></li>
+                    <li class="box-shadow"><img src="./img/4.jpg" alt="car"></li>
+                </ul>
+                <ul class="row">
+                    <li class="box-shadow"><img src="./img/5.jpg" alt="car"></li>
+                    <li class="box-shadow"><img src="./img/6.jpg" alt="car"></li>
+                    <li class="box-shadow"><img src="./img/7.jpg" alt="car"></li>
+                    <li class="box-shadow"><img src="./img/8.jpg" alt="car"></li>
+                </ul>
             </div>
         </div>
     </div>
