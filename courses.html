@@ -25,7 +25,7 @@
         }
 
         .main-footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             left: 0;
             right: 0;
@@ -96,7 +96,7 @@
             float: left;
             height: calc(100% - 30px);
             padding:15px;
-            width: calc(100% - 211px);
+            width: calc(100% - 491px);
             border-left: 1px solid rgb(146, 141, 141);
             
         }
@@ -116,10 +116,29 @@
             height:150px;
             width:200px;
         }
+        .right-sidebar {
+          padding: 15px;
+          float:right;
+          width:250px;
+          height: 100%;
+          background-color: aqua;
+        }
+        .right-sidebar ul {
+          list-style-type:none;
+        }
         .box-shadow {
             -webkit-box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
             -moz-box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
             box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+        }
+        .course-table {
+          margin-top:20px;
+          width:100%;
+          background-color:aquamarine;
+        }
+        .course-table tr td {
+          padding:5px;
+          border:1px solid #CCC;
         }
 
     </style>
@@ -143,28 +162,60 @@
             <aside class="left-sidebar">
                 <ul class="navigation">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="./courses.html">My Courses</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="./courses.html">My Courses</a></li>                    <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                 </ul>
             </aside>
             <div class="gallery">
-                <h3>Gallery</h3>
-                <ul class="row">
-                    <li class="box-shadow"><img src="./img/1.jpg" alt="car"></li>
-                    <li class="box-shadow"><img src="./img/2.jpg" alt="car"></li>
-                    <li class="box-shadow"><img src="./img/3.jpg" alt="car"></li>
-                    <li class="box-shadow"><img src="./img/4.jpg" alt="car"></li>
-                </ul>
-                <ul class="row">
-                    <li class="box-shadow"><img src="./img/5.jpg" alt="car"></li>
-                    <li class="box-shadow"><img src="./img/6.jpg" alt="car"></li>
-                    <li class="box-shadow"><img src="./img/7.jpg" alt="car"></li>
-                    <li class="box-shadow"><img src="./img/8.jpg" alt="car"></li>
-                </ul>
+                <h3>My Courses</h3>
+                <table class="course-table" cellpadding="2">
+                  <thead>
+                    <tr>
+                      <td>Courses</td>
+                      <td>Section</td>
+                      <td>Instructor</td>
+                      <td>Days</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Programming</td>
+                      <td>sec 123</td>
+                      <td>Kwon</td>
+                      <td>Monday/Wednesday</td>
+                    </tr>
+                    <tr>
+                      <td>Programming</td>
+                      <td>sec 123</td>
+                      <td>Kwon</td>
+                      <td>Monday/Wednesday</td>
+                    </tr>
+                    <tr>
+                      <td>Programming</td>
+                      <td>sec 123</td>
+                      <td>Kwon</td>
+                      <td>Monday/Wednesday</td>
+                    </tr>
+                    <tr>
+                      <td>Programming</td>
+                      <td>sec 123</td>
+                      <td>Kwon</td>
+                      <td>Monday/Wednesday</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
+            <aside class="right-sidebar">
+                <h3>Sub Nav</h3>
+                <ul class="navigation">
+                    <li><a href="./index.html">Link 1</a></li>
+                    <li><a href="./courses.html">Link 2</a></li>                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </aside>
+
         </div>
     </div>
     <footer class="main-footer">
