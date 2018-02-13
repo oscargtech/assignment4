@@ -1,0 +1,25 @@
+body, html {
+    width:100%;
+    background: #cb4c28;
+
+}
+.error-container{
+margin:250 auto;
+}
+.error-container > h1{
+    color: #fff;
+    font-weight:bold;
+    text-align: center;
+
+
+
+}
+.error-icon-container{
+    text-align: center;
+    
+}
+.error-icon-container >{
+    text-align: center;
+    width: 200px;
+    
+}
