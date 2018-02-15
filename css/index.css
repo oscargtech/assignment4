@@ -119,6 +119,7 @@
     list-style-type: none;
     text-align: center;
     width: 100%;
+    overflow: auto;
   }
 
   .gallery ul.row li {
@@ -198,4 +199,41 @@
     padding: 5px 20px;
     margin-bottom: 5px;
     border-radius: 6px;
+  }
+
+  /* Product Grid */ 
+  .Product-grid{
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  .Product-grid  tr td{
+    border: 1px solid black;
+    padding: 7px 13px;
+  }
+  .btn_buy_now{
+    padding: 7px 13px;
+    color:white;
+    background-color: #449a9a;
+    border-radius: 7px;
+    width:100%;
+  }
+  .product{
+width:150px;
+height: 140px;
+min-width: 100%;
+background-size: cover;
+max-width: 100px;
+background-repeat: no-repeat;
+background-image: url('../img/products/p1.png');
+  }
+  .btn_primary{
+    padding: 7px 13px;
+    color:white;
+    background-color: #449a9a;
+    border-radius: 7px;
+    float: right;
+    margin-bottom: 20px;
+  }
+  .button_container{
+
   }
