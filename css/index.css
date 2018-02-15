@@ -9,11 +9,12 @@
 
   body {
     height: calc(100% - 90px);
+    background-color: #318e8e;
   }
 
   .main-header,
   .main-footer {
-    background-color: #cb4c28;
+    background-color: #449a9a;
     height: 50px;
   }
 
@@ -37,7 +38,7 @@
   }
 
   .main-container {
-    width: 80%;
+    width: 99%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -47,11 +48,11 @@
 
   .bio-container {
     height: 140px;
-    background-color: #99c39b;
+    background-color: #f7f7f7;
   }
 
   .avatar {
-    width: 180px;
+    width: 145px;
     height: 140px;
     background: #f7f7f7;
     float: left;
@@ -72,7 +73,7 @@
 
   .left-sidebar {
     float: left;
-    width: 180px;
+    width: 145px;
     height: 100%;
     background-color: #f7f7f7;
   }
@@ -155,10 +156,10 @@
 
   .login-container {
  
-    padding:20px;
+    padding: 16px;
     width: 450px;
-    height: 495px;
-    background-color: #cb4d28;
+    height: 700px;
+    background-color: #449a9a;
     position: absolute;
     left: 0;
     right: 0;
@@ -193,7 +194,7 @@
     display: none;
     color: #FFF;
     font-weight: bold;
-    background-color: red;
+    background-color: #fabc00;
     padding: 5px 20px;
     margin-bottom: 5px;
     border-radius: 6px;
